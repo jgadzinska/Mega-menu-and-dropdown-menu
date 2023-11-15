@@ -1,1 +1,1 @@
-Mega menu and dropdown menu
+Dropdown menu i mega menu księgarni internetowej.
