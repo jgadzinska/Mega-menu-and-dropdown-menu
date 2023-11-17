@@ -56,7 +56,7 @@ body {
 .navLinks li a:hover {
     color: rgb(3, 3, 99);
 }
-.navLinks .dropDown {
+.dropDown {
     position: absolute;
     background: white;
     width: 200px;
@@ -68,7 +68,8 @@ body {
     box-shadow: 0 16px 10px rgb(39, 39, 39);
     border-top: 3px solid rgb(3, 3, 99);
 }
-.navLinks li:hover .dropDown {
+.navLinks li:hover .dropDown,
+.navLinks li:hover .megaMenu {
     top: 70px;
     opacity: 1;
     visibility: visible;
@@ -81,6 +82,41 @@ body {
     font-size: 22px;
 }
 
+.megaMenu {
+    position: absolute;
+    width: 100%;
+    left: 100px;
+    top: 0;
+    padding: 0 200px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+.megaMenu .conteiner {
+    padding: 25px 80px;
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    box-shadow: 0 16px 10px black;
+    border-top: 3px solid rgb(3, 3, 99);
+}
+
+.megaMenu  h2 {
+    color: rgb(3, 3, 99);
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    margin-left: 27px;
+}
+.megaLinks li {
+    font-size: 22px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.megaLinks li a:hover {
+    color: rgb(3, 3, 99);
+}
 
 
 @media screen and (max-width: 950px)  {
