@@ -26,10 +26,12 @@ body {
     background: white;
     box-shadow: 0 2px 3px white;
 }
+
 .nav .navLinks {
     display: flex;
     align-items: center;
 }
+
 .nav a {
     color: black;
     font-size: 23px;
@@ -42,6 +44,7 @@ body {
     font-size: 45px;
     font-weight: 900;
 }
+
 .nav .logo span {
     color: rgb(19, 19, 108);
 }
@@ -53,9 +56,11 @@ body {
 .navLinks li {
     list-style: none;
 }
+
 .navLinks li a:hover {
-    color: rgb(3, 3, 99);
+    color: rgb(2, 2, 223);
 }
+
 .dropDown {
     position: absolute;
     background: white;
@@ -68,12 +73,14 @@ body {
     box-shadow: 0 16px 10px rgb(39, 39, 39);
     border-top: 3px solid rgb(3, 3, 99);
 }
+
 .navLinks li:hover .dropDown,
 .navLinks li:hover .megaMenu {
     top: 70px;
     opacity: 1;
     visibility: visible;
 }
+
 .dropDown li a {
     width: 450px;
     display: block;
@@ -92,6 +99,7 @@ body {
     visibility: hidden;
     transition: all 0.3s ease;
 }
+
 .megaMenu .conteiner {
     padding: 25px 80px;
     display: flex;
@@ -108,6 +116,7 @@ body {
     margin-bottom: 12px;
     margin-left: 27px;
 }
+
 .megaLinks li {
     font-size: 22px;
     display: flex;
@@ -115,7 +124,7 @@ body {
 }
 
 .megaLinks li a:hover {
-    color: rgb(3, 3, 99);
+    color: rgb(2, 2, 223);
 }
 
 
