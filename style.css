@@ -243,19 +243,3 @@ p {
     text-align: right;
 
 }
-
-
-
-
-@media screen and (max-width: 950px)  {
-    .nav {
-        max-width: 100%;
-        padding: 0 25px;
-    }
-    .nav .logo {
-        font-size: 38px;
-    }
-    .nav a {
-        font-size: 23px;
-    }
-}
