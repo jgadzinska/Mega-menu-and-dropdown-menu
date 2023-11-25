@@ -243,3 +243,7 @@ p {
     text-align: right;
 
 }
+.user {
+    font-size: 28px;
+    cursor: pointer;
+}
