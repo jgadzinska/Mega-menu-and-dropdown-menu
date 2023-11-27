@@ -247,3 +247,24 @@ p {
     font-size: 28px;
     cursor: pointer;
 }
+
+.social {
+    margin-top: 20px;
+    position: absolute;
+    left: 3%;
+    top: 580px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+.social li i {
+    font-size: 40px;
+    color: white;
+    padding: 5px;
+    list-style: none;
+}
+.social i:hover {
+    color: grey;
+}
+
+
