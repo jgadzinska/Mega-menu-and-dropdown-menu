@@ -243,12 +243,29 @@ p {
     text-align: right;
 
 }
-.user {
+.heartAltUser {
     font-size: 28px;
     cursor: pointer;
+    display: flex;
+    list-style: none;
+}
+.heartAltUser li {
+    margin: 3px;
 }
 
-.social {
+.heartAltUser li:nth-child(1) i:hover {
+    color: red;
+}
+
+.heartAltUser li:nth-child(2) i:hover {
+    color: rgb(6, 207, 6);
+}
+
+.heartAltUser li:nth-child(3) i:hover {
+    color: rgb(214, 10, 214);
+}
+
+.socialMedia {
     margin-top: 20px;
     position: absolute;
     left: 3%;
@@ -258,25 +275,25 @@ p {
     cursor: pointer;
     list-style: none;
 }
-.social li i {
+.socialMedia li i {
     font-size: 40px;
     color: white;
     padding: 5px;
 }
 
-.social li:nth-child(1) i:hover {
+.socialMedia li:nth-child(1) i:hover {
     color: rgb(46, 46, 226);
 }
 
-.social li:nth-child(2) i:hover {
+.socialMedia li:nth-child(2) i:hover {
     color: rgb(0, 195, 255);
 }
 
-.social li:nth-child(3) i:hover {
+.socialMedia li:nth-child(3) i:hover {
     color: rgb(40, 39, 39);
 }
 
-.social li:nth-child(4) i:hover {
+.socialMedia li:nth-child(4) i:hover {
     color: #cc2366;
 }
 
