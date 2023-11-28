@@ -13,6 +13,7 @@ body {
     background-position: center;
 }
 
+  /*Navigation*/ 
 .nav {
     position: absolute;
     top: 0;
@@ -56,6 +57,7 @@ body {
     color: rgb(2, 2, 223);
 }
 
+  /*Dropdown menu*/
 .dropDown {
     position: absolute;
     width: 250px;
@@ -81,6 +83,7 @@ body {
     visibility: visible;
 }
 
+  /*Mega menu*/
 .megaMenu {
     position: absolute;
     width: 100%;
@@ -91,6 +94,7 @@ body {
     visibility: hidden;
     transition: all 0.3s ease;
 }
+
 .megaMenu li {
     font-size: 22px;
     padding-top: 2px;
@@ -121,15 +125,17 @@ body {
     font-size: 25px;
     transition: all 0.3s ease;
 }
+
 .nav li:hover .bx-chevron-down {
     transform: rotate(180deg);
 }
 
-
+  /*Search box*/
 .searchToggle {
     display: flex;
     align-items: center;
 }
+
 .searchBox .searchToggle{
     height: 40px;
     width: 40px;
@@ -138,6 +144,7 @@ body {
     align-items: center;
     margin: 0 5px;
 }
+
 .searchToggle i {
     position: absolute;
     color: black;
@@ -145,14 +152,17 @@ body {
     transition: all 0.3s ease;
     cursor: pointer;
 }
+
 .searchToggle i.cancel {
     opacity: 0;
     pointer-events: none;
 }
+
 .searchToggle.active i.cancel {
     opacity: 1;
     pointer-events: auto;
 }
+
 .searchToggle.active i.search {
     opacity: 0;
     pointer-events: none;
@@ -161,6 +171,7 @@ body {
 .searchBox {
     position: relative;
 }
+
 .searchBox .searchText {
     position: absolute;
     bottom: -85px;
@@ -195,12 +206,14 @@ body {
     font-size: 14px;
     font-weight: 400;
 }
+
 .searchText i {
     position: absolute;
     color: black;
     right: 15px;
     font-size: 22px;
 }
+
 .searchText::before {
     content: '';
     position: absolute;
@@ -213,12 +226,13 @@ body {
     z-index: -1;
 }
 
-
+  /*Header*/
 .text {
     position: absolute;
     left: 2%;
     top: 30%;
 }
+
 .text h3 {
     font-size: 80px;
     font-weight: 300;
@@ -227,6 +241,7 @@ body {
     font-family: 'IBM Plex Sans', sans-serif;
     text-shadow: 2px 2px 2px white;
 }
+
 .text h4 {
     font-size: 75px;
     font-weight: 500;
@@ -234,6 +249,7 @@ body {
     font-family: 'IBM Plex Sans', sans-serif;
     text-shadow: 2px 2px 2px white;
 }
+
 p {
     position: absolute;
     left: 70%;
@@ -241,14 +257,16 @@ p {
     font-size: 35px;
     color:white;
     text-align: right;
-
 }
+
+  /*Heart, alt, user*/
 .heartAltUser {
     font-size: 28px;
     cursor: pointer;
     display: flex;
     list-style: none;
 }
+
 .heartAltUser li {
     margin: 3px;
 }
@@ -265,6 +283,7 @@ p {
     color: rgb(214, 10, 214);
 }
 
+/*Social media*/
 .socialMedia {
     margin-top: 20px;
     position: absolute;
@@ -275,6 +294,7 @@ p {
     cursor: pointer;
     list-style: none;
 }
+
 .socialMedia li i {
     font-size: 40px;
     color: white;
