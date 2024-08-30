@@ -3,140 +3,188 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing page with dropdown and mega menu.</title>
+    <title>Dropdown and mega menu</title>
+
     <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
 </head>
-<body>
+<body> 
 
-    <!--Navigation-->>
-    <nav class="nav">
-        <a href="#" class="logo"><span>biblioteka</span>.pl</a>
+    <header class="menu_wrapper">
 
-        <ul class="navLinks">
+        <nav class="navbar navbar-expand-lg">
 
-            <li><a href="#">Strona główna</a></li>
+            <div class="container">
+              <a class="navbar-brand" href="#">book.pl</a>
+
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+              aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-menu navbar-toggler-icon text-white"></i>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent"> 
+
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+
+                  <!-- DropDown Menu -->
+
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
+                    data-bs-auto-close="outside" href="#">Podręczniki</a>
+
+                    <ul class="dropdown-menu shadow">
+                      <li><a class="dropdown-item" href="#">Lektury</a></li>
+                      <li><a class="dropdown-item" href="#">Szkoła wyższa</a></li>
+
+                      <li class="dropstart">
+                        <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#">Szkoła podstawowa</a>
+                        <ul class="dropdown-menu shadow">
+                          <li><a class="dropdown-item" href="#">Klasa 0</a></li>
+                          <li><a class="dropdown-item" href="#">Klasa 1-3</a></li>
+                          <li><a class="dropdown-item" href="#">Klasa 4-6</a></li>
+                          <li><a class="dropdown-item" href="#">Klasa 7-8</a></li>
+                        </ul>
+                      </li>
+                      
+                      <li class="dropend">
+                        <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown"
+                        data-bs-auto-close="outside"  href="#">Szkoła średnia</a>
+
+                        <ul class="dropdown-menu shadow">
+                          <li><a class="dropdown-item" href="#">Technikum</a></li>
+                          <li><a class="dropdown-item" href="#">Liceum</a></li>
+
+                          <li class="dropend">
+                            <a class="dropdown-item dropdown-toggle"b 
+                            data-bs-toggle="dropdown" 
+                            data-bs-auto-close="outside" href="#">Mundurowa</a>
+
+                            <ul class="dropdown-menu dropdown-submenu shadow">
+                              <li><a class="dropdown-item" href="#">Policyjna</a></li>
+                              <li><a class="dropdown-item" href="#">Strażacka</a></li>
+                            </ul> 
+                          </li>
+
+                          <li><a class="dropdown-item" href="#">Branżowa</a></li>
+
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
 
 
-            <!--Dropdown menu-->
-            <li>
-                <a href="#">Podręczniki<i class='bx bx-chevron-down'></i></a>
-                <ul class="dropDown">
-                    <li><a href="#">Szkoła podstawowa</a></li>
-                    <li><a href="#">Liceum</a></li>
-                    <li><a href="#">Technikum</a></li>
-                    <li><a href="#">Szkoła językowa</a></li>
-                    <li><a href="#">Lektury</a></li>
-                </ul>
-            </li>
+                  <!-- Mega Menu -->
+                  
+                  <li class="nav-item dropdown dropdown-mega position-static">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" 
+                    data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                     Książki
+                    </a>
 
+                    <div class="dropdown-menu shadow">
+                        <div class="mega-content px-md-4">
+                            <div class="container-fluid">
 
-                <!--Mega menu-->
-            <li>
-                <a href="#">Książki<i class='bx bx-chevron-down'></i></a>
-                <ul class="megaMenu">
+                                <div class="row">
 
-                    <div class="conteiner">
+                                <div class="col-lg-3 col-sm-6 py-4 px-xl-5 px-4">
+                                    <h5>Kategorie</h5>
+                                    <div class="list-group">
+                                        <a class="list-group-item" href="#">Fantastyka</a>
+                                        <a class="list-group-item" href="#">Kryminały</a>
+                                        <a class="list-group-item" href="#">Romanse</a>
+                                        <a class="list-group-item" href="#">Literatura faktu</a>
+                                        <a class="list-group-item" href="#">Literatura obyczajowa</a>
+                                    </div>
+                                </div>
 
-                        <div class="row">
-                            <h2>Kategorie</h2>
-                            <ul class="megaLinks">
-                                <li><a href="#">Fantastyka</a></li>
-                                <li><a href="#">Kryminały</a></li>
-                                <li><a href="#">Romanse</a></li>
-                                <li><a href="#">Literatura faktu</a></li>
-                                <li><a href="#">Literatura obyczajowa</a></li>
-                            </ul>
-                        </div>
+                                <div class="col-lg-3 col-sm-6 py-4 px-xl-5 px-4">
+                                    <h5>Polecane</h5>
+                                    <div class="list-group">
+                                        <a class="list-group-item" href="#">Top10</a>
+                                        <a class="list-group-item" href="#">Nowości</a>
+                                        <a class="list-group-item" href="#">Bestselery</a>
+                                        <a class="list-group-item" href="#">Zapowiedzi</a>
+                                        <a class="list-group-item" href="#">Reportaże</a>
+                                    </div>
+                                </div>
 
-                        <div class="row">
-                            <h2>Polecane</h2>
-                            <ul class="megaLinks">
-                                <li><a href="#">Top10</a></li>
-                                <li><a href="#">Nowości</a></li>
-                                <li><a href="#">Bestselery</a></li>
-                                <li><a href="#">Zapowiedzi</a></li>
-                                <li><a href="#">Reportaże</a></li>
-                            </ul>
-                        </div>
+                                <div class="col-lg-3 col-sm-6 py-4 px-xl-5 px-4">
+                                    <h5>Zobacz także</h5>
+                                    <div class="list-group">
+                                        <a class="list-group-item" href="#">Biografie</a>
+                                        <a class="list-group-item" href="#">Biznes</a>
+                                        <a class="list-group-item" href="#">Komiksy</a>
+                                        <a class="list-group-item" href="#">Young Adult</a>
+                                        <a class="list-group-item" href="#">Obcojęzyczne</a>
+                                    </div>
+                                </div>
 
-                        <div class="row">
-                            <h2>Zobacz także</h2>
-                            <ul class="megaLinks">
-                                <li><a href="#">Biografie</a></li>
-                                <li><a href="#">Biznes</a></li>
-                                <li><a href="#">Komiksy</a></li>
-                                <li><a href="#">Young Adult</a></li>
-                                <li><a href="#">Obcojęzyczne</a></li>
-                            </ul>
-                        </div>
-                        
-                        <div class="row">
-                            <h2>Inne</h2>
-                            <ul class="megaLinks">
-                                <li><a href="#">Poradniki</a></li>
-                                <li><a href="#">Kuchnia</a></li>
-                                <li><a href="#">Podróżnicze</a></li>
-                                <li><a href="#">Dla dzieci</a></li>
-                                <li><a href="#">Dla młodzieży</a></li>
-                            </ul>
+                                <div class="col-lg-3 col-sm-6 py-4 px-xl-5 px-4">
+                                    <h5>Inne</h5>
+                                    <div class="list-group">
+                                        <a class="list-group-item" href="#">Poradniki</a>
+                                        <a class="list-group-item" href="#">Kuchnia</a>
+                                        <a class="list-group-item" href="#">Podróżnicze</a>
+                                        <a class="list-group-item" href="#">Dla dzieci</a>
+                                        <a class="list-group-item" href="#">Dla młodzieży</a>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
                         </div>
                     </div>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link disabled">O nas</a>
+                    <a class="nav-link disabled">Kontakt</a>
+                  </li>
 
                 </ul>
-            </li>
-
-            <li><a href="#">O nas</a></li>
-            <li><a href="#">Kontakt</a></li>
-
-       </ul>
 
 
-         <!--Search box-->
-       <div class="searchBox">
+                <form class="d-flex ms-auto">
+                    <div class="input-group">
+                      <input class="form-control border-0 me-0" type="" placeholder="Szukaj..." aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                </form>
 
-            <div class="searchToggle">
-                <i class='bx bx-x cancel'></i>
-                <i class='bx bx-search search'></i>
+              </div>
             </div>
+          </nav>
+    </header>
 
-            <div class="searchText">
-                <input type="text" placeholder="Szukaj tutaj...">
-                <i class='bx bx-search'></i>
-            </div>
+
+    <section id="hero" class="min-vh-100 d-flex align-items-center text-center">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-12">
+            <h1 class="text-white fw-semibold display-1">book.pl</h1>
+            <h5 class="text-white mt-3 mb-4">To księgarnia internetowa oferująca bogaty 
+              księgozbiór, gdzie każdy znajdzie coś dla siebie. Niezależnie od tego, czy szukasz podręcznika do nauki, powieści na wieczór, 
+              czy inspirującego poradnika, nasza księgarnia zaspokoi Twoje potrzeby czytelnicze.</h5>
+              <div>
+                <a href="#" class="btn btn-brand me-2 p-3 shadow-lg p-3 mb-5">Zobacz więcej<i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+          </div>
 
         </div>
+      </div>
+    </section>
 
 
-        <!--Heart, alt, user-->
-        <div class="heartAltUser">
-            <li><i class='bx bx-heart'></i></li>
-            <li><i class='bx bx-cart-alt'></i></li>
-            <li><i class='bx bx-user'></i></li>
-        </div>
-       
-    </nav>
-
-
-        <!--Header-->
-        <div class="text">
-            <h3>Dla miłośników</h1>
-            <h4>KSIĄŻEK</h2>
-        </div>
-
-        <p>Ksiegarnia internetowa,która oferuje <br> bogaty 
-        księgozbiór składający się <br> z ponad 3 000 e-booków.</p>
-
-      
-        <!--Social media-->
-        <div class="socialMedia">
-            <li><a href=""></a><i class='bx bxl-facebook'></i></li>
-            <li><a href=""></a><i class='bx bxl-twitter'></i></li>
-            <li><a href=""></a><i class='bx bxl-tiktok'></i></li>
-            <li><a href=""></a><i class='bx bxl-instagram-alt'></i></li>    
-        </div>
-
-
-    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

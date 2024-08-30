@@ -1,320 +1,143 @@
-@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@600&family=IBM+Plex+Sans:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+:root {
+    --bg-first-color:rgb(229, 234, 235);
+    --bg-second-color: rgb(27, 3, 184);
+
+    --text-first-color: rgb(104, 116, 247);
+    --text: black;
 }
 
-body {
-    min-height: 100vh;
-    background: url(images.jpg);
-    background-size: cover;
-    background-position: center;
+
+section {
+    height: 100vh;
 }
 
-  /*Navigation*/ 
-.nav {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 15px 380px 15px 150px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: white;
-    box-shadow: 0 2px 3px white;
+button:focus,
+.navbar-toggler:focus {
+    outline: 0;
+    box-shadow: none;
 }
 
-.nav .navLinks {
-    display: flex;
-    align-items: center;
+.menu_wrapper {
+    background-color: var(--bg-first-color);
+    font-family: "Montserrat", sans-serif;
+    padding: 15px 0;
 }
 
-.nav a {
-    color: black;
-    font-size: 23px;
+.menu_wrapper .navbar-brand {
+    font-size: 40px;
+    font-weight: 700;
+    background: -webkit-linear-gradient(rgb(12, 191, 241), rgb(27, 3, 184));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.menu_wrapper .navbar-brand:hover {
+    color: var(--text-first-color);
+}
+
+.menu_wrapper .navbar-nav .nav-item {
+    margin: 0 10px;
+}
+
+.menu_wrapper .navbar-nav .nav-link {
+    font-size: 18px;
     font-weight: 500;
-    text-decoration: none;
-    padding: 0 30px;
+    color: var(--text);
+    display: inline-block;
 }
 
-.nav .logo {
-    font-size: 45px;
-    font-weight: 900;
+.menu_wrapper .dropdown-menu .dropdown-item {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
 }
 
-.nav .logo span {
-    color: rgb(26, 26, 146);
+.menu_wrapper .dropdown-menu .dropdown-item:hover {
+    color: var(--text-first-color);
 }
 
-.navLinks li {
-    list-style: none;
-}
-
-.navLinks li a:hover {
-    color: rgb(2, 2, 223);
-}
-
-  /*Dropdown menu*/
-.dropDown {
-    position: absolute;
-    width: 250px;
-    top: 85px;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.3s ease;
-    background: white;
-    box-shadow: 0 16px 10px black;
-    border-top: 3px solid rgb(3, 3, 99);
-}
-
-.dropDown li {
-    font-size: 22px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
-
-.navLinks li:hover .dropDown,
-.navLinks li:hover .megaMenu {
-    top: 70px;
-    opacity: 1;
-    visibility: visible;
-}
-
-  /*Mega menu*/
-.megaMenu {
-    position: absolute;
+.menu_wrapper .dropdown-mega .dropdown-menu {
     width: 100%;
-    left: 100px;
-    top: 0;
-    padding: 0 200px;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.3s ease;
 }
 
-.megaMenu li {
-    font-size: 22px;
-    padding-top: 2px;
+.menu_wrapper .dropdown-mega h5 {
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgb(135, 133, 133);
+    margin: 0;
 }
 
-.megaMenu .conteiner {
-    padding: 25px 80px;
-    display: flex;
-    justify-content: space-between;
-    background: white;
-    box-shadow: 0 16px 10px black;
-    border-top: 3px solid rgb(3, 3, 99);
+.menu_wrapper .list-group-item {
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    padding: 12px 0;
 }
 
-.megaMenu  h2 {
-    color: rgb(3, 3, 99);
+.menu_wrapper .list-group-item:hover {
+    color: var(--text-first-color);
+}
+
+.menu_wrapper .btn {
+    background-color: var(--text-first-color);
+    color: black;
+}
+
+.menu_wrapper .btn:hover {
+    background-color: var(--bg-second-color);
+    color: white;
+} 
+
+#hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.438)), url(book.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#hero h5 {
+    font-size: 33px;
+}
+
+#hero .btn-brand {
+    background-color: var(--bg-second-color);
+    color: white;
     font-size: 25px;
     font-weight: 600;
-    margin-bottom: 12px;
-    margin-left: 27px;
 }
 
-.megaLinks li a:hover {
-    color: rgb(2, 2, 223);
+#hero .btn-brand:hover {
+    background-color: rgb(54, 68, 220);
 }
 
-.nav .bx-chevron-down {
-    font-size: 25px;
-    transition: all 0.3s ease;
+.fa-arrow-right {
+    font-size: 20px;
+    margin-left: 12px;
 }
 
-.nav li:hover .bx-chevron-down {
-    transform: rotate(180deg);
+@media (max-width: 1199px) {
+    .menu_wrapper .navbar-nav .nav-link {
+        font-size: 15px;
+    } 
 }
 
-  /*Search box*/
-.searchToggle {
-    display: flex;
-    align-items: center;
+@media (max-width: 991px)  {
+    .menu_wrapper .navbar-brand {
+        font-size: 30px;
+    }
+
+    .menu_wrapper .navbar-nav .nav-item {
+        margin: 5px 10px;
+    }
+
+    .menu_wrapper form {
+        margin: 30px 0;
+    }
+
+    #hero h5 {
+        font-size: 26px;
+        margin: 0 10px;
+    }
 }
-
-.searchBox .searchToggle{
-    height: 40px;
-    width: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 5px;
-}
-
-.searchToggle i {
-    position: absolute;
-    color: black;
-    font-size: 25px;
-    transition: all 0.3s ease;
-    cursor: pointer;
-}
-
-.searchToggle i.cancel {
-    opacity: 0;
-    pointer-events: none;
-}
-
-.searchToggle.active i.cancel {
-    opacity: 1;
-    pointer-events: auto;
-}
-
-.searchToggle.active i.search {
-    opacity: 0;
-    pointer-events: none;
-}
-
-.searchBox {
-    position: relative;
-}
-
-.searchBox .searchText {
-    position: absolute;
-    bottom: -90px;
-    right: 5px;
-    height: 58px;
-    width: 850px;
-    display: flex;
-    align-items: center;
-    background-color: black;
-    padding: 3px;
-    border-radius: 4px;
-    box-shadow: 0 5px 5px grey;
-    opacity: 0;
-    pointer-events: none;
-    transition: all 0.3s ease;
-}
-
-.searchToggle.active ~ .searchText {
-    bottom: -74px;
-    opacity: 1;
-    pointer-events: auto;
-}
-
-.searchText input {
-    height: 100%;
-    width: 100%;
-    padding: 0 45px 0 15px;
-    outline: none;
-    border: none;
-    border-radius: 4px;
-    color: black;
-    font-size: 16px;
-    font-weight: 400;
-}
-
-.searchText i {
-    position: absolute;
-    color: black;
-    right: 15px;
-    font-size: 25px;
-}
-
-.searchText::before {
-    content: '';
-    position: absolute;
-    right: 14px;
-    top: -4px;
-    height: 12px;
-    width: 12px;
-    background-color: black;
-    transform: rotate(-45deg);
-    z-index: -1;
-}
-
-  /*Header*/
-.text {
-    position: absolute;
-    left: 2%;
-    top: 30%;
-}
-
-.text h3 {
-    font-size: 80px;
-    font-weight: 300;
-    padding-bottom: 40px;
-    color: white;
-    font-family: 'IBM Plex Sans', sans-serif;
-    text-shadow: 2px 2px 2px white;
-}
-
-.text h4 {
-    font-size: 75px;
-    font-weight: 500;
-    color: white;
-    font-family: 'IBM Plex Sans', sans-serif;
-    text-shadow: 2px 2px 2px white;
-}
-
-p {
-    position: absolute;
-    left: 70%;
-    top: 300px;
-    font-size: 35px;
-    color:white;
-    text-align: right;
-}
-
-  /*Heart, alt, user*/
-.heartAltUser {
-    font-size: 28px;
-    cursor: pointer;
-    display: flex;
-    list-style: none;
-}
-
-.heartAltUser li {
-    margin: 3px;
-}
-
-.heartAltUser li:nth-child(1) i:hover {
-    color: red;
-}
-
-.heartAltUser li:nth-child(2) i:hover {
-    color: rgb(6, 207, 6);
-}
-
-.heartAltUser li:nth-child(3) i:hover {
-    color: rgb(214, 10, 214);
-}
-
-/*Social media*/
-.socialMedia {
-    margin-top: 20px;
-    position: absolute;
-    left: 3%;
-    top: 580px;
-    display: flex;
-    flex-direction: column;
-    cursor: pointer;
-    list-style: none;
-}
-
-.socialMedia li i {
-    font-size: 40px;
-    color: white;
-    padding: 5px;
-}
-
-.socialMedia li:nth-child(1) i:hover {
-    color: rgb(46, 46, 226);
-}
-
-.socialMedia li:nth-child(2) i:hover {
-    color: rgb(0, 195, 255);
-}
-
-.socialMedia li:nth-child(3) i:hover {
-    color: rgb(40, 39, 39);
-}
-
-.socialMedia li:nth-child(4) i:hover {
-    color: #cc2366;
-}
-
-
