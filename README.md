@@ -1,1 +1,2 @@
-Dropdown and Mega Menu księgarni internetowej z wykorzytaniem Bootstrap
+Dropdown and Mega Menu księgarni internetowej.
+Technologie: HTML, CSS, Bootstrap.
