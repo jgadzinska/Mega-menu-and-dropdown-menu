@@ -6,10 +6,10 @@ Projekt przedstawia dropdown menu i mega menu.
 
 Funkcje: 
 
-- mega menu - obsługuje podziały na kolumny i grupy kategorii
+- mega menu - obsługuje podziały na kolumny i grupy kategorii.
 
-- dropdown menu - wyświetla się po kliknięciu na wybrany element
+- dropdown menu - wyświetla się po kliknięciu na wybrany element.
 
-- struktura nawigacyjna
+- struktura nawigacyjna.
 
-- responsywność 
+- responsywność.
