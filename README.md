@@ -1,15 +1,15 @@
 Demo: https://jgadzinska.github.io/Mega-menu-and-dropdown-menu/
 
-Technologie: HTML, CSS, Bootstrap.
+Technologies: HTML, CSS, Bootstrap.
 
-Projekt przedstawia dropdown menu i mega menu.
+The design features dropdown and mega menu.
 
-Funkcje: 
+Features: 
 
-- mega menu - obsługuje podziały na kolumny i grupy kategorii
+- mega menu - supports division into columns and category groups
 
-- dropdown menu - wyświetla się po kliknięciu na wybrany element
+- dropdown menu - displayed after clicking on the selected element
 
-- struktura nawigacyjna
+- navigation structure
 
-- responsywność
+- the website is responsive
